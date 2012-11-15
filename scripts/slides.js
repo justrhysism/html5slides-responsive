@@ -569,11 +569,6 @@ function addGeneralStyle() {
 	document.body.appendChild(el);
 
 	var el = document.createElement('meta');
-	el.name = 'viewport';
-	el.content = 'width=1100,height=750';
-	document.querySelector('head').appendChild(el);
-
-	var el = document.createElement('meta');
 	el.name = 'apple-mobile-web-app-capable';
 	el.content = 'yes';
 	document.querySelector('head').appendChild(el);
