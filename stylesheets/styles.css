@@ -1,4 +1,3 @@
-@charset "CP850";
 /*
   Google HTML5 slides template
 
@@ -135,13 +134,13 @@ body {
 }
 /* line 107, ../sass/styles.scss */
 .slides.template-default > article:not(.nobackground):not(.biglogo) {
-  background-image: url(../images/google-logo.png);
+  background-image: url(../images/logo.svg);
   background-size: 15%;
   background-position: 95.5% 96.8%;
 }
 /* line 112, ../sass/styles.scss */
 .slides.template-default article.biglogo {
-  background-image: url(../images/google-logo.png);
+  background-image: url(../images/logo.svg);
   background-size: 40%;
   background-position: 50%;
 }
