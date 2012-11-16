@@ -35,6 +35,7 @@ body {
 	overflow-y: auto;
 	background: rgb(215, 215, 215);
 	@include background(radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190)));
+	@include perspective(1000);
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -44,7 +45,6 @@ body {
 	left: 0;
 	top: 0;
 	position: absolute;
-	@include transform(translate3d(0, 0, 0));
 
 	// Slide Styles
 	> article {
@@ -75,6 +75,8 @@ body {
 		@include box-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
 
 		border: 1px solid rgba(0, 0, 0, 0.3);
+		@include transform(translate3d(0, 0, 0));
+		@include backface-visibility(hidden);
 		@include transition(transform .3s ease-out);
 
 		// Positioning
